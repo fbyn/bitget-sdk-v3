@@ -109,6 +109,9 @@ if __name__ == '__main__':
     # result = orderApi.fills(symbol, orderId='804553570245029890')
     # print(result)
 
+    # result = orderApi.open_orders()
+    # print(result)
+
     planApi = plan.PlanApi(api_key, secret_key, passphrase, use_server_time=False, first=False)
 
     # result = planApi.place_plan(symbol, marginCoin='USDT', size='1', side='open_long', orderType='limit', triggerPrice='39782', executePrice='38982', triggerType='fill_price', timeInForceValue='normal')

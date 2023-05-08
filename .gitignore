@@ -1,2 +1,8 @@
 
 bitget/__pycache__/
+
+env/
+
+bitget/mix/__pycache__/
+
+.idea/

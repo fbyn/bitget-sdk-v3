@@ -135,3 +135,19 @@ class OrderApi(Client):
             return self._request_with_params(GET, MIX_ORDER_V1_URL + '/fills', params)
         else:
             return "pls check args "
+
+
+    '''
+       Obtain transaction details
+       :return:
+       '''
+
+    def open_orders(self, symbol='', productType='umcbl'):
+        params = {}
+        params["productType"] = productType
+        if symbol:
+            params["symbol"] = symbol
+            return self._request_with_params(GET, MIX_ORDER_V1_URL + '/marginCoinCurrent', params)
+        else:
+            return self._request_with_params(GET, MIX_ORDER_V1_URL + '/marginCoinCurrent', params)
+
